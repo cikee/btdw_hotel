@@ -20,6 +20,7 @@ public class HttpClientClose extends Thread{
 	}
 	
 	
+	@SuppressWarnings("unused")
 	@Override
 	public void run() {
 		try {

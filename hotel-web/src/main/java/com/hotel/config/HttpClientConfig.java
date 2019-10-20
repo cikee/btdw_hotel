@@ -74,6 +74,7 @@ public class HttpClientConfig {
 	  * 设置builder的连接信息
 	 * @return
 	 */
+	@SuppressWarnings("deprecation")
 	@Bean(name = "builder")
 	public RequestConfig.Builder getBuilder(){
 		RequestConfig.Builder builder = RequestConfig.custom();

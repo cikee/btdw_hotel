@@ -10,6 +10,8 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain=true)
 public class BasePojo implements Serializable{
+	private static final long serialVersionUID = 
+			-791782830997086263L;
 	private Date created;
 	private Date updated;
 

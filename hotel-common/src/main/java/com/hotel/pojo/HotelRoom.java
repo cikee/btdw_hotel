@@ -1,14 +1,16 @@
 package com.hotel.pojo;
 
-import java.io.Serializable;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import lombok.Data;
-
-@Data
+@Setter
+@Getter
+@ToString
 public class HotelRoom extends BasePojo{
-
 	private static final long serialVersionUID = 3594136813859621026L;
-	int id;
+	
+	Integer id;
 	String roomType;
 	String roomBedtype;
 	String roomBedsize;

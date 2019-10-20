@@ -2,8 +2,6 @@ package com.hotel.util;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Set;
-
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;

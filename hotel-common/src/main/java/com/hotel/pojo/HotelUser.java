@@ -1,12 +1,16 @@
 package com.hotel.pojo;
 
 import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import lombok.Data;
-
-@Data
+@Setter
+@Getter
+@ToString
 public class HotelUser extends BasePojo{
-
+	private static final long serialVersionUID = 
+			5925269883279621161L;
 	private Integer id;
 	private String userName;
 	private String userPwd;
