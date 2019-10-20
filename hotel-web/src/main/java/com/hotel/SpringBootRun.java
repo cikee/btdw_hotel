@@ -11,10 +11,6 @@ public class SpringBootRun {
 	
 	public static void main(String[] args) {
 
-		//aaaaa
-
-		//hjhgj
-
 		SpringApplication.run(SpringBootRun.class, args);
 	}
 }
