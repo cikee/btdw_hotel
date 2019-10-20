@@ -1,0 +1,69 @@
+#b {
+	border-bottom: 2px solid #E7EAED;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+body {
+	background: url(../img/g11.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 45px;
+	padding-left: 370px;
+}
+
+#a {
+	padding-left: 370px;
+	font-size: 30px;
+}
+
+#c {
+	padding-left: 370px;
+	margin-top: 20px;
+}
+
+#d {
+	padding-left: 370px;
+	margin-top: 4px;
+}
+
+input {
+	height: 40px;
+	width: 500px;
+}
+
+a {
+	color: coral;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+select {
+	height: 40px;
+	width: 500px;
+}
+
+#f {
+	height: 40px;
+	width: 505px;
+	margin-top: 10px;
+}
+
+
+#btn{/* 登录(提交)按钮 */
+	position:relative;
+	top:40px;
+	height:40px;
+	padding:20px 234px 20px 234px;
+	width:800px;
+	color:white;
+	text-decoration:none;
+	background:grey;
+	/* 覆盖上面统一设置的46px的缩进 */
+}

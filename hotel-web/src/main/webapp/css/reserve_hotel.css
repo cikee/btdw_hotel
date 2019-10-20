@@ -1,0 +1,410 @@
+		body {
+				width: 100%;
+				/*border: 1px solid black;*/
+				padding: 0;
+				margin: 0;
+			}
+			
+		/*导航条样式*/
+			#btd_d1 {
+				background: #0F2453;
+				height: 82px;
+				width: 100%;
+				position: fixed;
+				z-index: 999;
+				top: 0px;
+				left: 0;
+				right: 0;
+			}
+			#top_logo_left {
+				display: block;
+				width: 200px;
+				height: 82px;
+				float: left;
+				padding: 0;
+				margin-left: 200px;
+			}
+			#top_logo_left>h1>a>span {
+				font-size: 26px;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+			}
+			
+			#top_logo_left>h1>a {
+				height: 50px;
+				line-height: 25px;
+				padding: 0;
+				margin: 0;
+			}
+			#logo_caption {
+				position: absolute;
+				top: 53px;
+				padding-bottom: 12px;
+			}
+			
+			#top_logo_right {
+				display: block;
+				width: 630px;
+				float: right;
+				position: absolute;
+				top: 20px;
+				right: 10px;
+				margin-right: 200px;
+			}
+			
+			#top_logo_right>ul {
+				font: 16px verdana, arial, sans-serif;
+				/* 设置文字大小和字体样式 */
+				width: 100%;
+			}
+			
+			#top_logo_right>ul>li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+				float: left;
+				color: #fff;
+			}
+			
+			#top_logo_right>ul>li>a {
+				margin: 0;
+				padding: 0px 20px;
+			}
+			
+			#logo_link_first {
+				color: #FFF;
+				transition: transform 0.3s, opacity 0.3s;
+				text-decoration: none;
+			}
+			
+			#logo_link {
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+			#logo_link:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
+			
+			#logo_link_first:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
+	/*----------------筛选区----------------------------------*/		
+			
+		/*预定房间搜索房间和表单总样式*/
+		.container{
+			position: absolute;
+			top: 80px;
+			width:100%;
+			height: 425px;
+			padding-bottom: 30px;
+			background:#0F2453;
+			font-size: 12px;
+		}
+		/*预定房间输入框的总样式*/
+		.input_section{
+			width: 1200px;
+			height: 40px;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/*输入框的标题样式*/
+		.input_title{
+			width: 36px;
+			height: 40px;
+			line-height: 40px;
+			margin-right: 20px;
+			float: left;
+			color: white;
+		}
+		/*目的地和关键词的输入框样式*/
+		.input_text{
+			width: 138px;
+			height: 38px;
+			padding-left: 10px;
+			margin-right: 45px;
+			border:1px solid gainsboro;
+			float: left;
+		}
+		/*日期的输入框样式*/
+		.date{
+			width: 298px;
+			height: 38px;
+			padding-left: 10px;
+			margin-right: 45px;
+			border:1px solid gainsboro;
+			float: left;
+		}
+		/*搜索按钮样式*/
+		.input_search{
+			float: right;
+		    display: block;
+		    width: 125px;
+		    height: 38px;
+		    margin-top: 1px;
+		    line-height: 38px;
+		    color: #fff;
+		    border: none;
+		    border-radius: 5px;
+		    background: #5aabfc;
+		    font-size: 16px;
+		}
+		
+		/*预定酒店表单总框*/
+		.option_section{
+			width: 1200px;
+			height: 323px;
+		    margin: 0 auto;
+		    padding: 0 20px;
+		    box-sizing: border-box;
+		    background: #fff;
+		}
+		/*表单里面的每一行总样式*/
+		.row{
+			min-height: 40px;
+		    line-height: 40px;
+		    border-bottom: 1px solid #ddd;
+		    padding: 10px 0 10px 10px;
+		}
+		/*表单首行的关键字总样式*/
+		.title{
+			float: left;
+		    display: block;
+		    width: 70px;
+		    margin-right: 5px;
+		}
+		/*表单"不限"的总样式*/
+		.unlimited{
+			float: left;
+			width: 24px;
+			height: 22px;
+		    line-height: 22px;	
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-top: 9px;
+			margin-right: 5px;
+		    color: #fff;
+    		background: #5aabfc;
+		}
+		/*第一行表单框样式*/
+		.checkbox_box{
+		    width: 1020px;
+    		float: right;
+		}
+		/*表单内具体位置/星级/价格的单元样式*/
+		.location_s_m{
+		    float: left;
+		    display: block;
+		    height: 40px;
+		    line-height: 36px;
+		    margin: 0 20px;
+		}
+		/*价格区间的样式*/
+		.price_input{
+		    float: left;
+		    display: block;
+		    height: 40px;
+		    line-height: 36px;
+		    margin: 0 20px;
+		}
+		/*价格输入框样式*/
+		.price_section{
+		    width: 50px;
+		    height: 24px;
+		    padding: 0 10px;
+		    border: 1px solid #ddd;
+		    vertical-align: middle;
+		}
+		/*价格区间确认按钮样式*/
+		.price_confirm{
+		    background: #fff;
+		    border: 1px solid #ddd;
+		    border-radius: 2px;
+		    height: 26px;
+		    line-height: 26px;
+		    width: 50px;
+		    margin-top: 0;
+		}
+		
+/*------酒店查询结果信息的样式栏-------------------------------------------------------*/
+		/*酒店结果信息的总框架样式*/
+		#container2_first{
+			position: absolute;
+		    top: 535px;
+		    width: 100%;
+		    height: 1200px;
+		    background: #0F2453;
+		}
+		/*酒店信息内容的总框架样式*/
+		#container2_content{
+			width: 1200px;
+		    height: auto;
+		    margin-left: auto;
+		    margin-right: auto;
+		    background: #F7F7F7;
+		}
+		/*酒店查询结果条*/
+		#search_result{
+			width: 1200px;
+			padding:5px 0 5px 30px;;
+		}
+		#search_result>span{
+			color: blue;
+		}
+		/*排序导航条总框*/
+		#sort_nav{
+		    width: 1200px;
+		    height: 40px;
+		    background-color: rgb(148, 201, 255);
+		}
+		/*排序类型样式*/
+		.nav_title{
+		    float: left;
+		    padding-left: 30px;
+		    background-color: #94c9ff;
+		    color: #fff;
+		    height: 40px;
+		    line-height: 40px;
+		}
+		.nav_one{
+			float: left;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    background-color: #94c9ff;
+		    color: #fff;
+		    height: 40px;
+		    line-height: 40px;
+		}
+		.nav_two{
+			float: left;
+			padding-left: 20px;
+		    padding-right: 20px;
+		    background-color: #94c9ff;
+		    color: #fff;
+		    height: 40px;
+		    line-height: 40px;
+		}
+		.nav_three{
+			float: left;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    background-color: #94c9ff;
+		    color: #fff;
+		    height: 40px;
+		    line-height: 40px;
+		}
+		/*酒店信息总框*/
+		#information_frame{
+			width: 1200px;
+			height: 260px;
+			border-bottom: 1px solid grey;
+		}
+		#information_frame:hover{
+			background: #F1FEDE;
+		}
+		/*酒店信息中图片样式*/
+		#message_picture{
+			float: left;
+			width: 260px;
+			height: 200px;
+			margin-top: 30px;
+		}
+		#message_picture>a>img{
+			width: 260px;
+			height: 200px;
+		}
+		/*酒店信息中右边的详细信息总框*/
+		#message_right{
+			position: relative;
+			float: right;
+			width: 900px;
+			height: 200px;
+			margin-top: 30px;
+		}
+		/*详细信息*/
+		#message_detail{
+			float: left;
+			width: 900px;
+			height: 100px;
+		}
+		.pname>a{
+			font-size: 25px;
+			text-decoration: none;
+			color: black;
+		}
+		/*详细信息中酒店类型样式*/
+		#message_middle{
+			margin: 10px 0 10px 0;
+			float: left;
+			width: 500px;
+			height: 30px;
+		}
+		.middle_tag1{
+			float: left;
+			border: 1px solid dodgerblue;
+			width: 50px;
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-right: 20px;
+			margin-top: 10px;
+			background: white;
+			color: dodgerblue;
+			border-radius: 4px;
+		}
+		.middle_tag2{
+			float: left;
+			border: 1px solid dodgerblue;
+			width: 50px;
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-right: 20px;
+			margin-top: 10px;
+			background: white;
+			color: dodgerblue;
+			border-radius: 4px;
+		}
+		/*详细信息中价格区域的总框*/
+		#message_bottom_frame{
+			position: absolute;
+			width: 150px;
+		    right: 0;
+		    bottom: 50px;
+			/*float: right;*/
+			height: 50px;
+		}
+		#price_frame{
+			width: 150px;
+		}
+		#price{
+			margin: 10px;
+		}
+		/*价格里的金钱字体*/
+		#price>span{
+			font-size: 30px;
+			color: red;
+		}
+		#price_detail>a{
+			border: 1px solid orange;
+			background: white;
+			width: 100px;
+			color: orange;
+			border-radius: 3px;
+			text-decoration: none;
+			padding:5px 20px 5px 20px;
+			margin-top: 10px;
+		}
+	
+		
+		
+		
+		

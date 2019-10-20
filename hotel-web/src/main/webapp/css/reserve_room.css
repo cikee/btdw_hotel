@@ -1,0 +1,381 @@
+body {
+	width: 100%;
+	/*border: 1px solid black;*/
+	padding: 0;
+	margin: 0;
+	font: bold 16px/24px "Microsoft YaHei", Helvetica, Tahoma, Arial,
+		"Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti,
+		SimSun, sans-serif;
+	color: #3c3c3c;
+}
+
+#color-background {
+	width: 100%;
+	height: 1500px;
+	background: #0F2453;
+}
+/*导航条样式*/
+#btd_d1 {
+	background: #0F2453;
+	height: 82px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0px;
+	left: 0;
+	right: 0;
+}
+
+#top_logo_left {
+	display: block;
+	width: 200px;
+	height: 82px;
+	float: left;
+	padding: 0;
+	margin-left: 200px;
+}
+
+#top_logo_left>h1>a>span {
+	font-size: 26px;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+
+#top_logo_left>h1>a {
+	height: 50px;
+	line-height: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+#logo_caption {
+	position: absolute;
+	top: 53px;
+	padding-bottom: 12px;
+}
+
+#top_logo_right {
+	display: block;
+	width: 630px;
+	float: right;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	margin-right: 200px;
+}
+
+#top_logo_right>ul {
+	font: 16px verdana, arial, sans-serif;
+	/* 设置文字大小和字体样式 */
+	width: 100%;
+}
+
+#top_logo_right>ul>li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+	color: #fff;
+}
+
+#top_logo_right>ul>li>a {
+	margin: 0;
+	padding: 0px 20px;
+}
+
+			#logo_link_first {
+				color: #FFF;
+				transition: transform 0.3s, opacity 0.3s;
+				text-decoration: none;
+			}
+			
+			#logo_link {
+				color: #FFF;
+				text-decoration: none;
+			}
+
+#logo_link:hover {
+	color: #FFCE14;
+	border: 1px solid #FFCE14;
+	text-shadow: 5px 5px 12px #000;
+	transition: all 0.5s;
+}
+
+#logo_link_first:hover {
+	color: #FFCE14;
+	border: 1px solid #FFCE14;
+	text-shadow: 5px 5px 12px #000;
+	transition: all 0.5s;
+}
+
+/*-----------------container2预定房间信息区----------------------------*/
+/*房间详情总框*/
+.container2 {
+	position: absolute;
+	top: 700px;
+	width: 100%;
+	height: 1200px;
+	background: #0F2453;
+}
+/*房间详情中间总框*/
+.container2_center {
+	width: 1200px;
+	height: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #F7F7F7;
+}
+/*房间导航总框*/
+.room-title {
+	width: 1200px;
+	height: 30px;
+	background-color: rgb(148, 201, 255);
+}
+/*房型导航条*/
+.room-title-first {
+	float: left;
+	padding-left: 80px;
+	width: 400px;
+	background-color: #94c9ff;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+}
+
+/*其他类型导航条*/
+.room-title-other {
+	float: left;
+	padding-left: 80px;
+	width: 125px;
+	height: 30px;
+	background-color: #94c9ff;
+	color: #fff;
+	line-height: 30px;
+}
+/*-----------------------------------*/
+/*房间详细信息总框*/
+.room-information {
+	width: 1200px;
+	height: 236px;
+	margin-bottom: 10px;
+	background: white;
+}
+/*房间图片区总样式*/
+.room-information-pic {
+	float: left;
+	width: 230px;
+	height: 185px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-right: 55px;
+}
+/*房间图片样式*/
+.photo>img {
+	width: 190px;
+	height: 142px;
+}
+/*房间类型名字的样式*/
+.photo-name {
+	float: left;
+	width: 150px;
+	height: 24px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #333;
+}
+/*----------------4详情-----------------------------------------------*/
+/*房间详情样式*/
+#detail {
+	float: left;
+	width: 40px;
+	height: 24px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #94C9FF;
+}
+/*鼠标移动到详情上发生的变化样式*/
+#content {
+	width: 800px;
+	height: 50px;
+	border: 1px solid #0F2453;
+	margin-top: 5px;
+	background: white;
+}
+
+#content>span {
+	margin-right: 70px;
+	color: #0F2453;
+	float: left;
+	font-size: 12px;
+}
+
+#detail1 {
+	float: left;
+	width: 40px;
+	height: 24px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #94C9FF;
+}
+/*鼠标移动到详情上发生的变化样式*/
+#content1 {
+	width: 800px;
+	height: 50px;
+	border: 1px solid #0F2453;
+	margin-top: 5px;
+	background: white;
+}
+
+#content1>span {
+	margin-right: 70px;
+	color: #0F2453;
+	float: left;
+	font-size: 12px;
+}
+
+#detail2 {
+	float: left;
+	width: 40px;
+	height: 24px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #94C9FF;
+}
+/*鼠标移动到详情上发生的变化样式*/
+#content2 {
+	width: 800px;
+	height: 50px;
+	border: 1px solid #0F2453;
+	margin-top: 5px;
+}
+
+#content2>span {
+	margin-right: 70px;
+	color: #0F2453;
+	background: white;
+	float: left;
+	font-size: 12px;
+}
+
+#detail3 {
+	float: left;
+	width: 40px;
+	height: 24px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #94C9FF;
+}
+/*鼠标移动到详情上发生的变化样式*/
+#content3 {
+	width: 500px;
+	height: 50px;
+	border: 1px solid blue;
+	margin-top: 5px;
+}
+/*--------------------------------------------------------------------*/
+/*房间预定右边详情总框*/
+.room-information-detail {
+	width: 913px; /*记得去掉边框改回915px*/
+	height: 236px;
+	float: left;
+}
+/*房间预定右边详情内的总样式*/
+.room-detail {
+	width: 913px;
+	height: 106px;
+	padding-top: 20px;
+}
+/*房间预定右边详情内每一行的总样式*/
+.room-row {
+	width: 915px;
+	height: 52px;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #EBEBEB;
+}
+/*鼠标移动到详情每一行时发生变化的样式*/
+.room-row:hover {
+	background: #F7F7F7;
+}
+/*房间详情行内标记样式*/
+.room-row>#span1 {
+	width: 250px;
+	height: 40px;
+	float: left;
+}
+
+.room-row>span {
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+/*预定按钮样式*/
+#room-reserve {
+	width: 100px;
+	height: 35px;
+	border: none;
+	background: #FA5D22;
+	color: white;
+	float: right;
+	margin-top: 10px;
+}
+
+/*-----------container3酒店基本信息区--------------------*/
+/*酒店基本信息总框*/
+.container3 {
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	height: 500px;
+	background: #0F2453;
+}
+/*酒店基本信息中间总框*/
+.container3_center {
+	width: 1200px;
+	height: 530px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+}
+/*基本信息导航条总样式*/
+.find_top {
+	width: 1200px;
+	height: 50px;
+	background: #0F2453;
+}
+/*导航条单元格span样式*/
+.find_top>div {
+	float: left;
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #94C9FF;
+	margin-right: 10px;
+}
+/*基本信息导航条具体样式*/
+.find_top>div>a {
+	color: black;
+	text-decoration: none;
+}
+/*移动到导航条上发生的变化样式*/
+.find_top>div:hover {
+	background: white;
+}
+/*基本信息具体展示栏*/
+.information_show {
+	width: 1200px;
+	height: 450px;
+}
+/*基本信息内表格span样式*/
+#s {
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+.information_show>div {
+	margin-bottom: 5px;
+}

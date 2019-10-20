@@ -1,0 +1,277 @@
+		body {
+				width: 100%;
+				/*border: 1px solid black;*/
+				padding: 0;
+				margin: 0;
+			}
+/*导航条样式*/
+			#btd_d1 {
+				background: #0F2453;
+				height: 82px;
+				width: 100%;
+				position: fixed;
+				z-index: 999;
+				top: 0px;
+				left: 0;
+				right: 0;
+			}
+			#top_logo_left {
+				display: block;
+				width: 200px;
+				height: 82px;
+				float: left;
+				padding: 0;
+				margin-left: 200px;
+			}
+			#top_logo_left>h1>a>span {
+				font-size: 26px;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+			}
+			
+			#top_logo_left>h1>a {
+				height: 50px;
+				line-height: 25px;
+				padding: 0;
+				margin: 0;
+			}
+			#logo_caption {
+				position: absolute;
+				top: 53px;
+				padding-bottom: 12px;
+			}
+			
+			#top_logo_right {
+				display: block;
+				width: 630px;
+				float: right;
+				position: absolute;
+				top: 20px;
+				right: 10px;
+				margin-right: 200px;
+			}
+			
+			#top_logo_right>ul {
+				font: 16px verdana, arial, sans-serif;
+				/* 设置文字大小和字体样式 */
+				width: 100%;
+			}
+			
+			#top_logo_right>ul>li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+				float: left;
+				color: #fff;
+			}
+			
+			#top_logo_right>ul>li>a {
+				margin: 0;
+				padding: 0px 20px;
+			}
+			
+			#logo_link_first {
+				color: #FFF;
+				transition: transform 0.3s, opacity 0.3s;
+				text-decoration: none;
+			}
+			
+			#logo_link {
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+			#logo_link:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
+			
+			#logo_link_first:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
+/*---------------------------------------------*/
+#background-color{
+	width: 100%;
+	height: 1300px;
+	background: #0F2453;
+}
+/*起到主体框架与顶部导航条的距离作用*/
+#cut{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+
+/*内容最外层主体框架,为该框架设置宽高,居中,背景色*/
+#welcome{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+#welcome>a{
+	text-align: center;
+	float: left;
+	width: 300px;
+	font-size: 30px;
+	color: white;
+	background:orange;
+	margin-top: 5px;
+	border: 2px solid orange;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#welcome>span{
+	text-align: center;
+	float: right;
+	width: 600px;
+	font-size: 30px;
+	color: white;
+	background:orange;
+	margin-top: 5px;
+	border: 2px solid orange;
+	border-radius: 5px;
+}
+/*核心内容层框*/
+#container1{
+	width: 1200px;
+	height: 1000px;
+	background: white;
+	margin: 0 auto;
+}
+/*菜单列表框*/
+.index-menu-list{
+	float: left;
+    margin-left: 17px;
+    margin-right: 10px;
+    margin-top: 30px;
+    height: 900px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    box-shadow: 1px 1px 3px 3px #e2e0de;
+    box-sizing: border-box;
+    width: 276px;
+    
+}
+.index-menu-list ul {
+    box-sizing: border-box;
+    width: 276px;
+    padding: 5px;
+    
+}
+
+.index-menu-list ul li {
+    text-align: center;
+    width: 265px;
+    height: 48px;
+    border-bottom: 1px solid #000;
+
+}
+
+.index-menu-list ul li:first-of-type {
+    border-top: 1px solid #000;
+    padding-bottom: 4px
+}
+.index-menu-list ul li a {
+    display: block;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    margin-top: 4px;
+    color: #000;
+    text-decoration: none;
+}
+.index-menu-list ul li:hover a {
+    background: #fd8204;
+    cursor: pointer;
+    color: #fff
+}
+.index-menu-list ul li.active a {
+    background: #fd8204;
+    cursor: pointer;
+    color: #fff
+}
+/*-----------------------------------------*/
+.store-menu-wrap {
+    width: 70%;
+    display: inline-block;
+    height: 900px;
+    overflow: auto;
+    margin-top: 30px;
+}
+
+.product-box {
+    box-sizing: border-box;
+    width: 250px;
+    height: 360px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0,0,0,.3);
+    border-radius: 20px;
+}
+.product-box .product-img {
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 2px solid #fd8204;
+    margin-top: 20px;
+}
+.product-box .product-img img {
+    width: 220px;
+    height: 230px;
+}
+.product-box .product-textbox {
+    box-sizing: border-box;
+    width: 245px;
+    height: 90px;
+    padding-left: 20px;
+    padding-top: 9px;
+}
+.product-name{
+	width: 245px;
+	height: 30px;
+	font-size:24px;
+}
+.product-pricebox {
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.product-box .product-price {
+    overflow: hidden;
+    width: 125px;
+    font-size: 15px;
+    color: #000;
+    float: left;
+    font-size: 20px;
+
+}
+.product-price>span{
+	float: left;
+	font-size:18px;
+}
+.orderNow{
+	float: right;
+	line-height: 23px;
+    font-size: 16px;
+    background: #fd8204;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+

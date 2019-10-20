@@ -1,0 +1,16 @@
+server:
+  port: 8082    
+spring:     #定义springmvc视图解析器
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+
+#dubbo消费者配置
+dubbo:
+  scan:
+    basePackages: com.hotel
+  application:
+    name: consumer-endWeb
+  registry:
+    address: zookeeper://192.168.198.130:2181?backup=192.168.198.130:2182,192.168.198.130:2183

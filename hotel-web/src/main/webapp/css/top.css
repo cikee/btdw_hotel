@@ -1,0 +1,97 @@
+/*导航条样式*/
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			#btd_d1 {
+				background: #0F2453;
+				height: 82px;
+				width: 100%;
+				position: fixed;
+				z-index: 999;
+				top: 0px;
+				left: 0;
+				right: 0;
+			}
+			#top_logo_left {
+				display: block;
+				width: 200px;
+				height: 82px;
+				float: left;
+				padding: 0;
+				margin-left: 200px;
+			}
+			#top_logo_left>h1>a>span {
+				font-size: 26px;
+				position: absolute;
+				padding: 0;
+				margin: 0;
+			}
+			
+			#top_logo_left>h1>a {
+				height: 50px;
+				line-height: 25px;
+				padding: 0;
+				margin: 0;
+			}
+			#logo_caption {
+				position: absolute;
+				top: 53px;
+				padding-bottom: 12px;
+			}
+			
+			#top_logo_right {
+				display: block;
+				width:700px;
+				float: right;
+				position: absolute;
+				top: 20px;
+				right: 10px;
+				margin-right: 200px;
+			}
+			
+			#top_logo_right>ul {
+				font: 16px verdana, arial, sans-serif;
+				/* 设置文字大小和字体样式 */
+				width: 100%;
+			}
+			
+			#top_logo_right>ul>li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: block;
+				float: left;
+				color: #fff;
+			}
+			
+			#top_logo_right>ul>li>a {
+				margin: 0;
+				padding: 0px 20px;
+				
+			}
+			
+			#logo_link_first {
+				color: #FFF;
+				transition: transform 0.3s, opacity 0.3s;
+				text-decoration: none;
+			}
+			
+			#logo_link {
+				color: #FFF;
+				text-decoration: none;
+			}
+			
+			#logo_link:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
+			
+			#logo_link_first:hover {
+				color: #FFCE14;
+				border: 1px solid #FFCE14;
+				text-shadow: 5px 5px 12px #000;
+				transition: all 0.5s;
+			}
