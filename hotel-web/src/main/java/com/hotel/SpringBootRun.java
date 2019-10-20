@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 public class SpringBootRun {
 	
 	public static void main(String[] args) {
-
+		///jnjknk
 		//aaaaa11
 		//fhgfhg
 		//hjhgj
