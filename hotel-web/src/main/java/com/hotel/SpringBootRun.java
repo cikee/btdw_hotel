@@ -8,9 +8,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @SpringBootApplication(exclude=DataSourceAutoConfiguration.class) //忽略数据源连接
 @MapperScan("com.hotel.mapper")
 public class SpringBootRun {
-	
+
 	public static void main(String[] args) {
-		///jnjknk
+
+
 		//aaaaa11
 		//fhgfhg
 		//hjhgj
