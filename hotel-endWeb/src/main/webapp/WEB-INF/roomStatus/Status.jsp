@@ -6,7 +6,7 @@
 <link href="../A8hotel/css/right.css" rel="stylesheet" type="text/css">
 <!DOCTYPE html>
 <head>
-</head>>
+</head>
 <body>
 	<h1>123</h1>
 </body>
