@@ -11,5 +11,9 @@ public class IndexController {
 	public String index() {
 		return "frame";
 	}
+	@RequestMapping("frame")
+	public String frame() {
+		return "frame";
+	}
 	
 }
