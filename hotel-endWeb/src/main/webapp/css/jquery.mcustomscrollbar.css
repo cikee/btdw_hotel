@@ -1,4 +1,4 @@
-/*
+﻿/*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
 */
@@ -370,7 +370,7 @@ yx-axis
 	.mCSB_scrollTools .mCSB_buttonDown,
 	.mCSB_scrollTools .mCSB_buttonLeft,
 	.mCSB_scrollTools .mCSB_buttonRight{
-		background-image: url(mCSB_buttons.png); /* css sprites */
+		background-image: url(../images/mcsb_buttons.png); /* css sprites */
 		background-repeat: no-repeat;
 		opacity: 0.4; filter: "alpha(opacity=40)"; -ms-filter: "alpha(opacity=40)"; 
 	}
@@ -736,7 +736,7 @@ yx-axis
 	
 	.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail{
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==");
+		background-image: url("../images/c30c4f84bba04706bbd1605ad820bba4.gif");
 		background-repeat: repeat-y;
 		opacity: 0.3;
 		filter: "alpha(opacity=30)"; -ms-filter: "alpha(opacity=30)"; 
@@ -761,7 +761,7 @@ yx-axis
 	/* theme "rounded-dots-dark" */
 	
 	.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail{
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=");
+		background-image: url("../images/5278390cc2fb46cda8b695c27a02813f.gif");
 	}
 	
 	.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonUp{ background-position: -96px -72px; }
