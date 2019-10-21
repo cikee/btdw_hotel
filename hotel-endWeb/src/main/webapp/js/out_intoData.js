@@ -1,3 +1,5 @@
+//根据2018.03.01日 张家港客户需求改版的要求，在新的后台框架中提供以下功能
+
 //新增
 function addOutDataList(id){
 	var str = '<tr>'+
