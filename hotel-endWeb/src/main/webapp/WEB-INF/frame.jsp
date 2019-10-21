@@ -51,7 +51,6 @@
 				<img src="images/logo.png" />
 				<div class="logoText">
 					<h1>酒店管理系统</h1>
-					
 				</div>
 			</div>
 			<div class="menu">
