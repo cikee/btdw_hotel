@@ -17,4 +17,9 @@ public class IndexController {
 		return "frame";
 	}
 	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
 }

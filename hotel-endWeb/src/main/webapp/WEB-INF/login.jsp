@@ -30,7 +30,7 @@
 		<!-- 公共样式 结束 -->
 		
 		<link rel="stylesheet" type="text/css" href="css/login1.css">
-		<script type="text/javascript" src="js/login1.js"></script>
+		<script type="text/javascript" src="../js/login1.js"></script>
 	</head>
 
 	<body>
