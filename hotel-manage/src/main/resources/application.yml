@@ -7,7 +7,7 @@ spring:
         #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://:3307/hotel?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    url: jdbc:mysql://176.55.9.3:3307/hotel?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password: root
 #    username: Hotel
@@ -40,7 +40,7 @@ dubbo:
   application:
     name: provider-manage
   registry:
-    address: zookeeper://192.168.198.130:2181?backup=192.168.198.130:2182,192.168.198.130:2183
+    address: zookeeper://49.233.79.16:2181?backup=49.233.79.16:2182,49.233.79.16:2183
   protocol:
     name: dubbo  #dubbo节点保存的名称
     port: 20890  #dubbo RPC调用的端口信息
