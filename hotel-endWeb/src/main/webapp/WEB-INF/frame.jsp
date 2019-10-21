@@ -9,7 +9,7 @@
 <meta name="renderer" content="webkit">
 <!--国产浏览器高速模式-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>XXX</title>
+<title>酒店管理</title>
 
 <!-- 公共样式 开始 -->
 <link rel="shortcut icon" href="../images/favicon.ico" />
@@ -48,7 +48,7 @@
 			<ul>
 				</li>
 				<li><a class="menuFA" href="javascript:void(0)"
-					onclick="menuCAClick('RoomStatus/aboutfind',this)"><i
+					onclick="menuCAClick('RoomStatus/RoomStatus.html',this)"><i
 						class="iconfont icon-tubiao- left"></i>房态管理</a></li>
 				<li><a class="menuFA" href="javascript:void(0)"
 					onclick="menuCAClick('Billing/aboutBilling',this)"><i
@@ -122,10 +122,10 @@
 		<!-- 核心区域 - 开始 -->
 		<div class="frameMain">
 			<div class="title" id="frameMainTitle">
-				<span><i class="iconfont icon-xianshiqi"></i>后台首页</span>
+				<span><i class="iconfont icon-xianshiqi"></i>房态管理</span>
 			</div>
 			<div class="con">
-				<iframe id="mainIframe" src="RoomStatus/aboutfind" scrolling="no"></iframe>
+				<iframe id="mainIframe" src="RoomStatus/RoomStatus.html" scrolling="no"></iframe>
 			</div>
 		</div>
 		<!-- 核心区域 - 结束 -->
