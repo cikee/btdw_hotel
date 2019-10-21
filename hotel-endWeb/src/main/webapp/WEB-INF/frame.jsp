@@ -56,11 +56,6 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<li>
-						<a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('tgls/qdAPI',this)"><i class="iconfont icon-zhishi left"></i>前端API</a>
-					</li>
-					<li>
-						<a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('tgls/iconfont',this)"><i class="iconfont icon-huojian left"></i>iconfont字体库</a>
 					</li>
 					<li>
 						<a class="menuFA" href="javascript:void(0)" onclick="menuCAClick('RoomStatus/aboutfind',this)"><i class="iconfont icon-tubiao- left"></i>房态管理</a>
