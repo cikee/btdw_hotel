@@ -39,7 +39,7 @@
 }
 
 #dhbt1 {
-	background-image: url(../x8hotel/images/an_1.gif);
+	background-image: url(../A8hotel/an_1.gif);
 	background-repeat: no-repeat;
 	height: 20px;
 	width: 130px;
@@ -77,7 +77,7 @@
 }
 
 #dhbt2 {
-	background-image: url(http://www.x8dns.com/x8hotel//images/an_2.gif);
+	background-image: url(../A8hotel/an_2.gif);
 	background-repeat: no-repeat;
 	height: 20px;
 	width: 130px;
@@ -106,7 +106,7 @@
 }
 
 #fj_new01 {
-	background-image: url(http://www.x8dns.com/x8hotel//images/fj_new01.gif);
+	background-image: url(../A8hotel/fj_new01.gif);
 	height: 90px;
 	width: 90px;
 	float: left;
@@ -115,7 +115,7 @@
 }
 
 #fj_new02 {
-	background-image: url(http://www.x8dns.com/x8hotel//images/fj_new02.gif);
+	background-image: url(../A8hotel/fj_new02.gif);
 	height: 90px;
 	width: 90px;
 	float: left;
@@ -124,8 +124,7 @@
 }
 
 #fj_new02_s {
-	background-image:
-		url(http://www.x8dns.com/x8hotel//images/fj_new02_s.gif);
+	background-image: url(../A8hotel/fj_new02_s.gif);
 	height: 90px;
 	width: 90px;
 	float: left;
@@ -134,7 +133,7 @@
 }
 
 #fj_new03 {
-	background-image: url(http://www.x8dns.com/x8hotel//images/fj_new03.gif);
+	background-image: url(../A8hotel/fj_new03.gif);
 	height: 90px;
 	width: 90px;
 	float: left;
@@ -143,7 +142,7 @@
 }
 
 #fj_new04 {
-	background-image: url(http://www.x8dns.com/x8hotel//images/fj_new04.gif);
+	background-image: url(../A8hotel/fj_new04.gif);
 	height: 90px;
 	width: 90px;
 	float: left;
