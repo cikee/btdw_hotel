@@ -144,5 +144,6 @@
 		<module>hotel-web</module>
 		<module>hotel-test</module>
 		<module>hotel-endWeb</module>
+		<module>hotel-roomManage</module>
 	</modules>
 </project>
