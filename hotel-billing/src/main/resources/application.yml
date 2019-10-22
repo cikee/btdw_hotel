@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8083
   servlet:
     context-path: /
 spring:
@@ -38,7 +38,7 @@ dubbo:
   scan:
     basePackages: com.hotel
   application:
-    name: provider-manage
+    name: provider-billing
   registry:
     address: zookeeper://49.233.79.16:2181?backup=49.233.79.16:2182,49.233.79.16:2183
   protocol:

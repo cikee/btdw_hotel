@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.hotel.mapper.HotelFoodMapper">
+  <resultMap type="com.hotel.pojo.HotelFood" id="hotelFood">
+  <id column="id" property="id"/>
+  <result column="food_name" property="username"/>
+  <result column="food_price" property="price"/>
+  <result column="photo_addr" property="photoAddr"/>
+  <result column="menu_id" property="menuId"/>
+  <result column="user_username" property="UserUsername"/>
+  </resultMap>
+  <select id="selectObjectByMuneId" resultMap="hotelFood">
+  select * from food_list where menu_id=#{menuId}
+  </select>
+  
+  <select id="selectObjectByFoodId" resultMap="hotelFood">
+    select * from food_list where id in <foreach collection="array" item="id" open="(" close=")" separator=",">
+    #{id}
+    </foreach>
+  </select>
+  </mapper>
