@@ -1,9 +1,9 @@
 package com.hotel.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/RoomStatus")
@@ -15,7 +15,9 @@ public class RoomStatus {
 	}
 	
 	@RequestMapping("/Status")
-	public String Status() {
+	public String Status(Model model) {
+		
+		
 		return "RoomStatus/Status";
 	} 
 

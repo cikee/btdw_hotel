@@ -327,51 +327,51 @@
 		<td>
 
 			<div id="fj_new01"
-				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
+				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
 							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
+					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
 			<div id="fj_new02"
-				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
+				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
 							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
+					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
 			<div id="fj_new03"
-				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
+				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
 							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
+					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
 			<div id="fj_new04"
-				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
+				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
 							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
+					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
 
