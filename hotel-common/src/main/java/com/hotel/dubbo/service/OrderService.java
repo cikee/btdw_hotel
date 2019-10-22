@@ -1,6 +1,8 @@
 package com.hotel.dubbo.service;
 
 
+import java.util.List;
+
 import com.hotel.vo.LunchOrderInfo;
 import com.hotel.vo.OrderInfo;
 import com.hotel.vo.PageObject;
@@ -25,6 +27,8 @@ public interface OrderService {
 	
 	/*查询订餐信息*/
 	PageObject<LunchOrderInfo> findLunchOrders(
-			String username,Integer pageCurrent); 
+			String username,Integer pageCurrent);
+	/*查询收入数据 $dada*/
+	List<OrderInfo> findMoney(); 
 	
 }
