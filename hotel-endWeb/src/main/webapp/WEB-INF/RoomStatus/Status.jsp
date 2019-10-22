@@ -338,33 +338,43 @@
 					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
-
-			<div id="fj_new01"
-				onClick="javascript:window.location.href='fj_kd.php?tid=559' ">
+			<div id="fj_new02"
+				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=559' class='ps_txt'>202<br> <span
-							style='font-size: 12px; color: #666666;'>三人间</span></a>
+						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=559' class='wz_txt'>￥180</a>
+					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
-
-
-			<div id="fj_new01"
-				onClick="javascript:window.location.href='fj_kd.php?tid=412' ">
+			<div id="fj_new03"
+				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
 				<div id="ps">
 					<div class='ps_txt_div'>
-						<a href='fj_kd.php?tid=412' class='ps_txt'>8301<br> <span
-							style='font-size: 12px; color: #666666;'>三人间</span></a>
+						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+							style='font-size: 12px; color: #666666;'>普通标间</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.php?tid=412' class='wz_txt'>￥180</a>
+					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
 				</div>
 			</div>
+			<div id="fj_new04"
+				onClick="javascript:window.location.href='fj_kd.php?tid=574' ">
+				<div id="ps">
+					<div class='ps_txt_div'>
+						<a href='fj_kd.php?tid=574' class='ps_txt'>201<br> <span
+							style='font-size: 12px; color: #666666;'>普通标间</span></a>
+					</div>
+				</div>
+				<div id="wz">
+					<a href='fj_kd.php?tid=574' class='wz_txt'>￥128</a>
+				</div>
+			</div>
+
 
 		</td>
 	</tr>
@@ -387,9 +397,16 @@
 		 
 		    var zx = getQueryVariable('dqfx');
 		    console.log(zx);
+		    //将所有标题设置绿色
+		    $("div.all").attr('id','dhbt1');
+		    $("div.jjx").attr('id','dhbt1');
+		    $("div.ssx").attr('id','dhbt1');
+		    $("div.gdx").attr('id','dhbt1');
+		    $("div.hhx").attr('id','dhbt1');
+
+		    //获取url参数dqfx的值设置为橙色
 		    $("div."+zx).attr('id','dhbt2');
 		    	
-			  
 
 </script>
 
