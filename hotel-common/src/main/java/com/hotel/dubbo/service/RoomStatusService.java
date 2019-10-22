@@ -1,4 +1,4 @@
-package com.hotel.service;
+package com.hotel.dubbo.service;
 
 import java.util.List;
 
