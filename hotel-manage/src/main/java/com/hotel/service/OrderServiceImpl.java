@@ -9,6 +9,7 @@ import com.hotel.dubbo.service.OrderService;
 import com.hotel.exception.ServiceException;
 import com.hotel.mapper.HotelOrderMapper;
 import com.hotel.mapper.HotellunchMapper;
+import com.hotel.mapper.hotelmoneymapper;
 import com.hotel.vo.LunchOrderInfo;
 import com.hotel.vo.OrderInfo;
 import com.hotel.vo.PageObject;
@@ -83,6 +84,14 @@ public class OrderServiceImpl implements OrderService{
 			throw new ServiceException("记录可能已经不存在");
 
 		return rows;
+	}
+	/*查询收入 $dada*/
+	@Autowired
+	private hotelmoneymapper hotelmoneymapper;
+	@Override
+	public List<OrderInfo> findMoney() {
+		List<OrderInfo> list = hotelmoneymapper.selectList(null);
+		return list;
 	}
 
 }
