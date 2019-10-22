@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hotel.dubbo.service.RoomStatusService;
 import com.hotel.pojo.HotelRoomStatus;
-import com.hotel.service.RoomStatusService;
 
 @RestController
 @RequestMapping("")

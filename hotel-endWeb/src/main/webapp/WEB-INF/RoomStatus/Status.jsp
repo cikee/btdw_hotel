@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -325,56 +326,21 @@
 
 	<tr>
 		<td>
-
-			<div id="fj_new01"
+			<c:forEach items="${status}" var="s">
+			<div id="fj_new0${ s.roomStatus }"
 				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
 				<div id="ps">
+					<div style="height:16px;overflow:hidden;position:absolute; width:90px; line-height:16px;z-index:100;float: left;color: #ffffff;cursor:hand;font-size: 12px;background-image: url(../A8hotel/yd_tb.gif);" onclick="javascript:window.location.href='fj_kd.html?tid=136' ">${ s.roomZt }</div>
 					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
+						<a href='fj_kd.html?tid=574' class='ps_txt'>${ s.roomNumber }<br> <span
+							style='font-size: 12px; color: #666666;'>${ s.roomName }</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
+					<a href='fj_kd.html?tid=574' class='wz_txt'>${ s.roomPrice }</a>
 				</div>
 			</div>
-			<div id="fj_new02"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-			<div id="fj_new03"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-			<div id="fj_new04"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-
+		</c:forEach>
 
 		</td>
 	</tr>

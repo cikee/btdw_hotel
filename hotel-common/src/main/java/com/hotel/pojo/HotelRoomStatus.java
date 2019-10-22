@@ -26,6 +26,7 @@ public class HotelRoomStatus extends BasePojo{
 	private Long roomTimeprice;
 	private Long roomDeposit;
 	private String roomImg;
+	private String roomZt;
 	private Integer roomStatus;
 	
 	
