@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/RoomManage/")
 public class RoomManageController {
-
 	
-	
+	@RequestMapping("roomType_set")
+	public String roomTypeSet() {
+		return "RoomManage/roomTypeSet";
+	}
 }
