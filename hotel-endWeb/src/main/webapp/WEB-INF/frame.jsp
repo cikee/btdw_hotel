@@ -53,9 +53,20 @@
 				<li><a class="menuFA" href="javascript:void(0)"
 					onclick="menuCAClick('Billing/aboutBilling',this)"><i
 						class="iconfont icon-dingdan left"></i>开单管理</a></li>
-				<li><a class="menuFA" href="javascript:void(0)"
-					onclick="menuCAClick('RoomManage/aboutRoom',this)"><i
-						class="iconfont icon-biaodanpeizhi left"></i>房间管理</a></li>
+				<li><a class="menuFA" href="javascript:void(0)"><i
+						class="iconfont icon-biaodanpeizhi left"></i>房间管理<i
+						class="iconfont icon-dajiantouyou right"></i></a>
+						<dl>
+						<dt>
+							<a href="javascript:void(0)"
+								onclick="menuCAClick('RoomManage/roomType_set',this)">房间类型设置</a>
+						</dt>
+						<dt>
+							<a href="javascript:void(0)"
+								onclick="menuCAClick('RoomManage/room_set',this)">客房设置</a>
+						</dt>
+						</dl>
+				</li>
 				<li><a class="menuFA" href="javascript:void(0)"><i
 						class="iconfont icon-shangpin left"></i>商品管理<i
 						class="iconfont icon-dajiantouyou right"></i></a>

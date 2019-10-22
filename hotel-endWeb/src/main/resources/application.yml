@@ -13,4 +13,4 @@ dubbo:
   application:
     name: consumer-endWeb
   registry:
-    address: zookeeper://192.168.198.130:2181?backup=192.168.198.130:2182,192.168.198.130:2183
+    address: zookeeper://49.233.79.16:2181?backup=49.233.79.16:2182,49.233.79.16:2183
