@@ -15,7 +15,7 @@ import com.hotel.pojo.HotelUser;
 public class HotelUserServiceImpl implements HotelUserService {
 	@Autowired
 	private HotelUserMapper hotelUserMapper;
-@ExceptionHandler
+	@ExceptionHandler
 	@Override
 	public HotelUser selectLoginByUsername(String userName,String userNewPwd,String userPwd) {
 		HotelUser hotelUser = hotelUserMapper.selectLoginByUsername(userName);
