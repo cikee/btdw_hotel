@@ -48,7 +48,7 @@
 			<ul>
 				</li>
 				<li><a class="menuFA" href="javascript:void(0)"
-					onclick="menuCAClick('RoomStatus/RoomStatus.html',this)"><i
+					onclick="menuCAClick('RoomStatus/Status.html?dqfx=all',this)"><i
 						class="iconfont icon-tubiao- left"></i>房态管理</a></li>
 				<li><a class="menuFA" href="javascript:void(0)"
 					onclick="menuCAClick('Billing/aboutBilling',this)"><i
@@ -136,7 +136,7 @@
 				<span><i class="iconfont icon-xianshiqi"></i>房态管理</span>
 			</div>
 			<div class="con">
-				<iframe id="mainIframe" src="RoomStatus/RoomStatus.html" scrolling="no"></iframe>
+				<iframe id="mainIframe" src="RoomStatus/Status.html?dqfx=all" scrolling="no"></iframe>
 			</div>
 		</div>
 		<!-- 核心区域 - 结束 -->

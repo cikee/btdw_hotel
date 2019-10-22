@@ -10,14 +10,14 @@
 		<meta name="renderer" content="webkit">
 		<!--国产浏览器高速模式-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="穷在闹市" />
+		<meta name="author" content="酒店管理" />
 		<!-- 作者 -->
-		<meta name="revised" content="穷在闹市.v3, 2019/05/01" />
+		<meta name="revised" content="酒店管理 " />
 		<!-- 定义页面的最新版本 -->
-		<meta name="description" content="网站简介" />
+		<meta name="description" content="酒店管理" />
 		<!-- 网站简介 -->
 		<meta name="keywords" content="搜索关键字，以半角英文逗号隔开" />
-		<title>穷在闹市出品</title>
+		<title>酒店管理</title>
 
 		<!-- 公共样式 开始 -->
 		<link rel="shortcut icon" href="../images/favicon.ico"/>
