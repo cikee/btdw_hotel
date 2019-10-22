@@ -16,7 +16,7 @@ public class RoomStatus {
 	
 	@RequestMapping("/Status")
 	public String Status(Model model) {
-		
+		 
 		
 		return "RoomStatus/Status";
 	} 
