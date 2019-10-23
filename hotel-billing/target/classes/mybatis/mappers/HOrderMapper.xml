@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hotel.mapper.HotelOrderMapper">
+	<insert id="insertPayOrder">
+		insert into hotel_order
+		(user_name,user_phone,hotel_name,order_id,room_type,time,
+		hotel_addr,order_price,room_num,createTime,login_user,
+		store_id)
+		values
+		(#{userName},#{userPhone},#{hotelName},#{orderId},#{roomType},
+		#{time},#{hotelAddr},#{orderPrice},#{roomNum},now(),#{loginUser},
+		#{storeId})
+	</insert>
+
+
+<!-- 达达 -->
+	<select id="findPages" resultType="com.hotel.vo.OrderInfo">
+		select * from hotel_order
+		 <!-- where login_user=#{loginUser} -->
+		<include refid="queryWhereId" />
+		order by order_id desc limit #{startIndex},#{pageSize}
+	</select>
+
+	<select id="getRowCount" resultType="int">
+		select count(*) from hotel_order
+		<!-- where login_user=#{loginUser} -->
+		<include refid="queryWhereId" />
+	</select>
+	
+	<delete id="deleteOrders">
+		delete from hotel_order where order_id in
+		<foreach index="orderId" separator="," item="orderId"
+			close=")" open="(" collection="array"> #{orderId} </foreach>
+	</delete>
+
+	<sql id="queryWhereId">
+		<where>
+			<if test="userName!=null and userName!=''"> user_name like concat("%",#{userName},"%")  </if>
+							<!-- like concat("%",#{userName},"%") -->
+		</where>
+	</sql>
+</mapper>
