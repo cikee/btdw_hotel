@@ -328,16 +328,16 @@
 		<td>
 			<c:forEach items="${status}" var="s">
 			<div id="fj_new0${ s.roomStatus }"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
+				onClick="javascript:window.location.href='#' ">
 				<div id="ps">
-					<div style="height:16px;overflow:hidden;position:absolute; width:90px; line-height:16px;z-index:100;float: left;color: #ffffff;cursor:hand;font-size: 12px;background-image: url(../A8hotel/yd_tb.gif);" onclick="javascript:window.location.href='fj_kd.html?tid=136' ">${ s.roomZt }</div>
+					<div style="height:16px;overflow:hidden;position:absolute; width:90px; line-height:16px;z-index:100;float: left;color: #ffffff;cursor:hand;font-size: 12px;background-image: url(../A8hotel/yd_tb.gif);"">${ s.roomZt }</div>
 					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>${ s.roomNumber }<br> <span
+						<a href='fj_kd.html?roomNumber=${ s.roomNumber }&roomName=${ s.roomName }&roomPrice=${ s.roomPrice }' class='ps_txt'>${ s.roomNumber }<br> <span
 							style='font-size: 12px; color: #666666;'>${ s.roomName }</span></a>
 					</div>
 				</div>
 				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>${ s.roomPrice }</a>
+					<a href='fj_kd.html?roomNumber=${ s.roomNumber }&roomName=${ s.roomName }&roomPrice=${ s.roomPrice }' class='wz_txt'>￥${ s.roomPrice }</a>
 				</div>
 			</div>
 		</c:forEach>
