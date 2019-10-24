@@ -276,19 +276,19 @@
 -->
 </style>
 <script>
-			function goUrl(obj) {
-				location.href = obj.value;
-			}
-		</script>
+	function goUrl(obj) {
+		location.href = obj.value;
+	}
+</script>
 <script language="JavaScript">
-
-		</script>
+	
+</script>
 
 <script type="text/javascript">
-			function changeText() {
-				document.getElementById("wz").innerHTML = "***";
-			}
-		</script>
+	function changeText() {
+		document.getElementById("wz").innerHTML = "***";
+	}
+</script>
 </head>
 
 <body onLoad="document.form1.ss_title.focus();">
@@ -325,55 +325,55 @@
 	</tr>
 
 	<tr>
-		<td>
-			<c:forEach items="${status}" var="s">
-			<div id="fj_new0${ s.roomStatus }"
-				onClick="javascript:window.location.href='#' ">
-				<div id="ps">
-					<div style="height:16px;overflow:hidden;position:absolute; width:90px; line-height:16px;z-index:100;float: left;color: #ffffff;cursor:hand;font-size: 12px;background-image: url(../A8hotel/yd_tb.gif);"">${ s.roomZt }</div>
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?roomNumber=${ s.roomNumber }&roomName=${ s.roomName }&roomPrice=${ s.roomPrice }' class='ps_txt'>${ s.roomNumber }<br> <span
-							style='font-size: 12px; color: #666666;'>${ s.roomName }</span></a>
+		<td><c:forEach items="${status}" var="s">
+				<div id="fj_new0${ s.roomStatus }"
+					onClick="javascript:window.location.href='#' ">
+					<div id="ps">
+						<div
+							style="height: 16px; overflow: hidden; position: absolute; width: 90px; line-height: 16px; z-index: 100; float: left; color: #ffffff; cursor: hand; font-size: 12px; background-image: url(../A8hotel/yd_tb.gif);"">${ s.roomZt }</div>
+						<div class='ps_txt_div'>
+							<a href='${ s.roomUrl }.html?roomNumber=${ s.roomNumber }'
+								class='ps_txt'>${ s.roomNumber }<br> <span
+								style='font-size: 12px; color: #666666;'>${ s.roomName }</span></a>
+						</div>
+						<!-- fj_kd -->
+					</div>
+					<div id="wz">
+						<a href='${ s.roomUrl }.html?roomNumber=${ s.roomNumber }'
+							class='wz_txt'>￥${ s.roomPrice }</a>
 					</div>
 				</div>
-				<div id="wz">
-					<a href='fj_kd.html?roomNumber=${ s.roomNumber }&roomName=${ s.roomName }&roomPrice=${ s.roomPrice }' class='wz_txt'>￥${ s.roomPrice }</a>
-				</div>
-			</div>
-		</c:forEach>
-
-		</td>
+			</c:forEach></td>
 	</tr>
 
 	</table>
 </body>
 <script type="text/javascript">
-
 	//获取url 参数
 	//调用此函数传入一个参数名 获取参数名的value值
-	function getQueryVariable(variable){
-	      var query = window.location.search.substring(1);
-	      var vars = query.split("&");
-	      for (var i=0;i<vars.length;i++) {
-	             var pair = vars[i].split("=");
-	             if(pair[0] == variable){return pair[1];}
-	      }
-	      return(false);
-}
-		 
-		    var zx = getQueryVariable('dqfx');
-		    console.log(zx);
-		    //将所有标题设置绿色
-		    $("div.all").attr('id','dhbt1');
-		    $("div.jjx").attr('id','dhbt1');
-		    $("div.ssx").attr('id','dhbt1');
-		    $("div.gdx").attr('id','dhbt1');
-		    $("div.hhx").attr('id','dhbt1');
+	function getQueryVariable(variable) {
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if (pair[0] == variable) {
+				return pair[1];
+			}
+		}
+		return (false);
+	}
 
-		    //获取url参数dqfx的值设置为橙色
-		    $("div."+zx).attr('id','dhbt2');
-		    	
+	var zx = getQueryVariable('dqfx');
+	console.log(zx);
+	//将所有标题设置绿色
+	$("div.all").attr('id', 'dhbt1');
+	$("div.jjx").attr('id', 'dhbt1');
+	$("div.ssx").attr('id', 'dhbt1');
+	$("div.gdx").attr('id', 'dhbt1');
+	$("div.hhx").attr('id', 'dhbt1');
 
+	//获取url参数dqfx的值设置为橙色
+	$("div." + zx).attr('id', 'dhbt2');
 </script>
 
 </html>

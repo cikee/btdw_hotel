@@ -6,10 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <link href="./css/right.css" rel="stylesheet" type="text/css">
-<SCRIPT language="javascript" src="./js/xzcd.js"></SCRIPT>
-<script language="javascript" src="./js/sk_ts.js"></script>
+<SCRIPT language="javascript" src="../A8hotel/js/xzcd.js"></SCRIPT>
+<script language="javascript" src="../A8hotel/sk_ts.js"></script>
 <script language="javascript" src="./js/Calendar.js"></script>
-<script language="javascript" src="./js/initajax.js"></script>
+<script language="javascript" src="../A8hotel/initajax.js"></script>
 <style type="text/css">
 <!--
 .style1 {
@@ -67,8 +67,6 @@ ul {
 }
 -->
 </style>
-<script language="javascript" src="./js/initajax.js"></script>
-<script language="javascript" src="./js/show_rzr.js"></script>
 <script language="javascript">
 function check(){
 	if (document.form1.alipay_no.value != "" ){
@@ -107,12 +105,12 @@ var ts = form1.ts.value;
 var fjbh = form1.fjbh.value;
 	if (ts != "")
 	{
-		var url = "./reg_check2.php?fjbh="+fjbh+"&ts="+ts+"&time="+timerand;
+		var url = "RoomStatus/reg_check2.html?fjbh="+fjbh+"&ts="+ts+"&time="+timerand;
 		gel(x).innerHTML = "<font color='#0000ff'>正在检测房间预订系统，请稍候...</font>";
 		var ajax = InitAjax();
 		ajax.open("GET", url, true);
 		ajax.onreadystatechange = function() { 
-	　　	if (ajax.readyState == 4 && ajax.status == 200) {
+	　　	if (ajax.status == 200) {
 				gel(x).innerHTML = ajax.responseText;
 			}
 		}
@@ -180,7 +178,7 @@ function alipay_sf(){
 				align="center"></div>
 		</div>
 		<div id="t1">
-			<form action="./fj_kd.php" method="post" name="user"
+			<form action="fj_kd2.html?roomNumber=${ r.roomNumber }&roomName=${ r.roomName }&roomPrice=${ r.roomPrice }" method="post" name="user"
 				onSubmit="return check_mumber()" autocomplete="off">
 				<table width="90%" border="0" align="center" cellpadding="5"
 					cellspacing="1" bgcolor="#DADADA">
