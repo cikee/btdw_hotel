@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.hotel.mapper.HotellunchMapper">
+  	<select id="findLunchOrders" resultType="com.hotel.vo.LunchOrderInfo">
+  	select *
+         from order_list
+         <include refid="querylunchWhereId"/>
+         order by id desc
+         limit #{startIndex},#{pageSize}
+  	</select>
+  	<select id="getlunchRowCount" resultType="int">
+       select count(*)
+       from order_list
+       <include refid="querylunchWhereId"/>
+   </select>
+   <delete id="deletelunchOrders">
+   delete from order_list where id in
+    <foreach collection="array" open="(" close=")" item="id" separator="," >
+   #{id}
+   </foreach>
+   </delete>
+  	 <sql id="querylunchWhereId">
+       <where>
+           <if test="username!=null and username!=''">
+           user_name like concat("%",#{username},"%")
+           </if>
+       </where>
+   </sql>
+  </mapper>

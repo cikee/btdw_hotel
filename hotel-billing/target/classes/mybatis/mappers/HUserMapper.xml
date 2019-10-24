@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotel.mapper.HotelUserMapper">
+	<!--注册时判断数据库是否有此用户  -->
+	<select id="selectLoginByUsername" resultType="com.hotel.pojo.HotelUser">
+		select * from hotel_user where user_name=#{userName}
+	</select>
+	
+	<insert id="saveUserObject">
+		insert into
+		hotel_user(user_name,user_pwd,user_phone,user_salt,create_time)
+		values (#{userName},#{userPwd},#{userPhone},#{userSalt},now())
+	</insert>
+
+	<!--登录时判断数据库是否有此用户-->
+	<select id="findUser" resultType="com.hotel.vo.User">
+		select * from hotel_user where user_name=#{username} and user_pwd=#{userpwd}
+	</select>
+
+
+	<!-- 达达 -->
+	<select resultType="com.hotel.vo.HotelUserVo"
+		id="findUserInfo"> select
+		id,user_name,user_phone,user_datetime,user_email,user_idcard from
+		hotel_user where user_name=#{username} </select>
+
+	<update id="updateUserInfo"
+		parameterType="com.hotel.vo.HotelUserVo"> update hotel_user set user_name=#{username},
+		user_phone=#{userphone}, user_email=#{useremail},
+		user_idcard=#{useridcard} where user_name=#{username} </update>
+
+</mapper>

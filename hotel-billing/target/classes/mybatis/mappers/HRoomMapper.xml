@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hotel.mapper.HotelRoomMapper">
+	<select id="findRoomByStoreId"
+		resultType="com.hotel.pojo.HotelRoom">
+		select * from hotel_room
+		where store_id=#{id}
+	</select>
+
+	<select id="findRoomToOrder"
+		resultType="com.hotel.vo.OrderInfo">
+		select r.*,s.hotel_name,s.hotel_addr,s.hotel_phone 
+		from hotel_room r,hotel_store s
+		where r.store_id=s.id and r.id=#{id}
+	</select>
+</mapper>
