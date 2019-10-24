@@ -6,4 +6,30 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>hotel-roomManage</artifactId>
+   <dependencies>
+  <!-- 添加对common的依赖 -->
+  	<dependency>
+  		<groupId>com.hotel</groupId>
+  		<artifactId>hotel-common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  	<!--必须添加插件 -->
+	<build>
+		<plugins>
+			<!--跳过测试类打包 项目打成jar-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
