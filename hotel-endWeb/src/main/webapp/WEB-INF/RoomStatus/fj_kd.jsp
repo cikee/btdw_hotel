@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
@@ -178,7 +177,7 @@ function alipay_sf(){
 				align="center"></div>
 		</div>
 		<div id="t1">
-			<form action="fj_kd2.html?roomNumber=${ r.roomNumber }&roomName=${ r.roomName }&roomPrice=${ r.roomPrice }" method="post" name="user"
+			<form action="fj_kd2.html?roomNumber=${ r.roomNumber }" method="post" name="user"
 				onSubmit="return check_mumber()" autocomplete="off">
 				<table width="90%" border="0" align="center" cellpadding="5"
 					cellspacing="1" bgcolor="#DADADA">
@@ -201,7 +200,7 @@ function alipay_sf(){
 								<br />
 								<span style="font-size: 17px; cursor: hand;"><input
 									name='zdw_xz' type='checkbox' id='zdw_xz' value='1'> <label
-									for='zdw_xz'>是否开钟点房？单价：<b>￥ 60 元/3 小时</b> (超时:40 元/小时)
+									for='zdw_xz'>是否开钟点房？单价：<b>￥ ${ r.roomTimeprice } 元/3 小时</b> (超时:40 元/小时)
 								</label></span><br />
 								<br /> <span class="style1">VIP客户请先刷卡或输入</span><font
 									color="#0000ff">会员卡号或手机号：</font> <input name="member"
@@ -217,7 +216,7 @@ function alipay_sf(){
 									onMouseOut="this.className='btn_out'" class="btn_out"
 									style="padding-left: 30px; padding-right: 30px; font-size: 17px; height: 40px;">
 								<input name="go1" type="hidden" id="go1" value="2"> <input
-									name="tid" type="hidden" id="tid" value="128"> <input
+									name="tid" type="hidden" id="tid" value="${ r.roomPrice }"> <input
 									name="fj_fjlx" type="hidden" id="fj_fjlx" value="${ r.roomName }">
 							</div></td>
 					</tr>

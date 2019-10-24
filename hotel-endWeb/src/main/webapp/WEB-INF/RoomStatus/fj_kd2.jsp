@@ -254,7 +254,7 @@
 						</tbody>
 					</table>
 					<script type="text/javascript">
-						document.write("<audio autoplay='autoplay'><source src='http://fanyi.baidu.com/gettts?lan=zh&ie=GB2312&spd=6&text=%E6%AC%A2%E8%BF%8E%E5%85%A5%E4%BD%8F%E7%A2%A7%E6%B6%9B%E8%BE%BE%E7%BB%B4%E5%A4%A7%E9%85%92%E5%BA%97+%2C%E8%AF%B7%E5%87%BA%E7%A4%BA%E6%82%A8%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%BB%B6'> </audio>");
+						document.write("<audio autoplay='autoplay'><source src='http://tsn.baidu.com/text2audio?tex=%E6%AC%A2%E8%BF%8E%E5%85%A5%E4%BD%8F%E7%A2%A7%E6%B6%9B%E8%BE%BE%E7%BB%B4%E5%A4%A7%E9%85%92%E5%BA%97+%2C%E8%AF%B7%E5%87%BA%E7%A4%BA%E6%82%A8%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%BB%B6&lan=zh&tok=24.0f25afade8d7ad89ece83c4590153356.2592000.1574483357.282335-16896945&ctp=1&cuid=A0:8C:FD:C7:64:5D&spd=4&pit=5&vol=5&per=4'> </audio>");
 					</script>
 					<!-- <audio autoplay="autoplay">
 						<source src="http://fanyi.baidu.com/gettts?lan=zh&amp;ie=GB2312&amp;spd=6&amp;text=%E6%AC%A2%E8%BF%8E%E5%85%A5%E4%BD%8F%E5%90%9B%E6%9D%A5%E5%A4%A7%E9%85%92%E5%BA%97+%2C%E8%AF%B7%E5%87%BA%E7%A4%BA%E6%82%A8%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%BB%B6" type="audio/mpeg"><embed height="0" width="0" src="http://fanyi.baidu.com/gettts?lan=zh&amp;ie=GB2312&amp;spd=6&amp;text=%E6%AC%A2%E8%BF%8E%E5%85%A5%E4%BD%8F%E5%90%9B%E6%9D%A5%E5%A4%A7%E9%85%92%E5%BA%97+%2C%E8%AF%B7%E5%87%BA%E7%A4%BA%E6%82%A8%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%BB%B6"> </audio> -->

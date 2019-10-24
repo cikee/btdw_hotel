@@ -44,7 +44,7 @@ public class RoomStatus {
 	@RequestMapping("/fj_kd2")
 	public String fjkd2(Model model , HotelRoomStatus room) {
 		room = roomStatusService.findByRoomNumber(room);
-		model.addAttribute("status", room);
+		model.addAttribute("r", room);
 		
 		return "RoomStatus/fj_kd2";
 	}
