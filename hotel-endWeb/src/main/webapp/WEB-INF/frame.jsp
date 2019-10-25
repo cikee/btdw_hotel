@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
 <script type="text/javascript" src="../framework/jquery-1.11.3.min.js"></script>
+<!-- layUI的css和js引入 -->
 <link rel="stylesheet" type="text/css" href="../layui/css/layui.css">
 <script type="text/javascript" src="../layui/layui.js"></script>
 <!-- 滚动条插件 -->

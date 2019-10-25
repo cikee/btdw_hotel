@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain=true)
 public class OrderInfo implements Serializable{
 	private static final long serialVersionUID = 2264844813586934204L;
-	int id;
+	private Integer id;
 	private String roomType;
 	private String roomBedtype;
 	private String roomBedsize;
