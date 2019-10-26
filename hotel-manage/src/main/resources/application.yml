@@ -42,6 +42,7 @@ dubbo:
     registry:
      address: zookeeper://192.168.198.130:2181?backup=192.168.198.130:2182,192.168.198.130:2183
   protocol:
+<<<<<<< HEAD
     name: dubbo
     port: 20887
 
@@ -49,3 +50,7 @@ dubbo:
 
   
   
+=======
+    name: dubbo  #dubbo节点保存的名称
+    port: 20890  #dubbo RPC调用的端口信息
+>>>>>>> branch 'master' of https://github.com/cikee/btdw_hotel.git

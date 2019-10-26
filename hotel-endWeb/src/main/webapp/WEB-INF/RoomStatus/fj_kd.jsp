@@ -1,413 +1,229 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="../A8hotel/css/right.css" rel="stylesheet" type="text/css">
-<!DOCTYPE html>
-<head>
-<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="./css/right.css" rel="stylesheet" type="text/css">
+<SCRIPT language="javascript" src="../A8hotel/js/xzcd.js"></SCRIPT>
+<script language="javascript" src="../A8hotel/sk_ts.js"></script>
+<script language="javascript" src="./js/Calendar.js"></script>
+<script language="javascript" src="../A8hotel/initajax.js"></script>
 <style type="text/css">
 <!--
-.style3 {
-	color: #FF0000;
-	font-weight: bold;
-	text-decoration: underline;
+.style1 {
+	color: #FF0000
 }
 
-.ts {
-	font-size: 14px;
-	color: #FF7200;
-	text-decoration: none;
-	height: 40px;
-	width: 480px;
-	background-color: #FDF7CB;
-	border-top: 1px solid #6FB16E;
-	border-right: 1px solid #6FB16E;
-	border-bottom: 1px solid #6FB16E;
-	border-left: 1px solid #6FB16E;
-	padding-left: 5px;
-	padding-right: 5px;
-	letter-spacing: 0em;
-	margin-left: 10px;
-	word-spacing: 0em;
-	margin-bottom: 20px;
-	margin-top: 10px;
+.li_rzr_z {
+	line-height: 20px;
+	list-style-type: none;
+	float: left;
+	width: 80px;
+	text-align: right;
 }
 
-.big {
-	border-bottom-width: 1px;
-	border-bottom-style: dashed;
-	border-bottom-color: #333333;
+.li_rzr_y {
+	line-height: 20px;
+	list-style-type: none;
 }
 
-#dhbt1 {
-	background-image: url(../A8hotel/an_1.gif);
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 130px;
-	font-size: 12px;
+ul {
+	height: 25px;
+}
+
+#xs_rz2 {
+	width: 160px;
+	height: 65px;
 	color: #000000;
-	text-decoration: none;
+	background-color: #CDFCF0;
+	border: 1px solid #9EEDD9;
 	float: left;
-	text-align: center;
-	padding-top: 5px;
+	margin-right: 10px;
+	padding: 5px;
 }
 
-#dhbt1 a {
-	font-size: 13px;
-	line-height: 20px;
-}
-
-#dhbt2 a {
-	font-size: 13px;
-	line-height: 20px;
-}
-
-#dhbt1 a:hover {
-	color: #F66200;
-	text-decoration: none
-}
-
-#dhbt1 a:link {
-	color: #000000;
-	text-decoration: none
-}
-
-#dhbt1 a:visited {
-	color: #000000;
-	text-decoration: none
-}
-
-#dhbt2 {
-	background-image: url(../A8hotel/an_2.gif);
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 130px;
-	font-size: 12px;
-	color: #F66200;
-	text-decoration: none;
+#addtjr_ok {
 	float: left;
-	text-align: center;
-	padding-top: 5px;
+}
+
+.bg_bt {
+	font-size: 20px;
+	color: #0000FF;
+	text-decoration: none;
 	font-weight: bold;
 }
 
-#dhbt2 a:hover {
-	color: #F66200;
-	text-decoration: none
-}
-
-#dhbt2 a:link {
-	color: #F66200;
-	text-decoration: none
-}
-
-#dhbt2 a:visited {
-	color: #F66200;
-	text-decoration: none
-}
-
-#fj_new01 {
-	background-image: url(../A8hotel/fj_new01.gif);
-	height: 90px;
-	width: 90px;
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 15px;
-}
-
-#fj_new02 {
-	background-image: url(../A8hotel/fj_new02.gif);
-	height: 90px;
-	width: 90px;
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 15px;
-}
-
-#fj_new02_s {
-	background-image: url(../A8hotel/fj_new02_s.gif);
-	height: 90px;
-	width: 90px;
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 15px;
-}
-
-#fj_new03 {
-	background-image: url(../A8hotel/fj_new03.gif);
-	height: 90px;
-	width: 90px;
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 15px;
-}
-
-#fj_new04 {
-	background-image: url(../A8hotel/fj_new04.gif);
-	height: 90px;
-	width: 90px;
-	float: left;
-	margin-top: 3px;
-	margin-bottom: 15px;
-}
-
-#ps {
-	height: 60px;
-	font-size: 25px;
-	width: 90px;
-	text-align: center;
-	overflow: hidden;
-}
-
-.ps_txt_div {
-	padding-top: 20px;
-}
-
-.ps_txt {
-	height: 50px;
-	font-size: 27px;
-	width: 90px;
-	text-align: center;
-	line-height: 20px;
-	overflow: hidden;
-}
-
-.ps_txt:link {
-	font-family: "宋体";
-	font-size: 27px;
-	line-height: 20px;
-	color: #000000;
+.bg_bt_new {
+	font-size: 19px;
+	color: #0000FF;
 	text-decoration: none;
-}
-
-.ps_txt:visited {
-	font-family: "宋体";
-	font-size: 27px;
-	line-height: 20px;
-	color: #000000;
-	text-decoration: none;
-}
-
-.ps_txt:active {
-	font-family: "宋体";
-	font-size: 27px;
-	line-height: 20px;
-	color: #000000;
-	text-decoration: none;
-}
-
-.ps_txt:hover {
-	font-family: "宋体";
-	font-size: 27px;
-	line-height: 20px;
-	color: #666666;
-	text-decoration: none;
-}
-
-#wz {
-	height: 30px;
-	text-align: center;
-	overflow: hidden;
-}
-
-.wz_txt {
-	height: 30px;
-	font-size: 13px;
-	line-height: 30px;
-	width: 90px;
-	text-align: center;
 	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	overflow: hidden;
 }
 
-.wz_txt:link {
-	height: 30px;
-	font-size: 13px;
-	line-height: 30px;
-	width: 90px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	overflow: hidden;
-}
-
-.wz_txt:visited {
-	height: 30px;
-	font-size: 13px;
-	line-height: 30px;
-	width: 90px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	overflow: hidden;
-}
-
-.wz_txt:active {
-	height: 30px;
-	font-size: 13px;
-	line-height: 30px;
-	width: 90px;
-	text-align: center;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	overflow: hidden;
-}
-
-.wz_txt:hover {
-	height: 30px;
-	font-size: 13px;
-	line-height: 30px;
-	width: 90px;
-	text-align: center;
-	font-weight: bold;
-	color: #ffff00;
-	text-decoration: none;
-	overflow: hidden;
+.clsCheckBox {
+	display: none;
 }
 -->
 </style>
-<script>
-			function goUrl(obj) {
-				location.href = obj.value;
-			}
-		</script>
-<script language="JavaScript">
+<script language="javascript">
+function check(){
+	if (document.form1.alipay_no.value != "" ){
+	var theObj = document.getElementById("esave");
+	theObj.style.visibility="visible";
+	}
+if (document.form1.name.value == ""){
+	alert("请正确输入主客姓名!!");
+	document.form1.name.focus();
+	return false;
+	}
+if (document.getElementById("alipay_dmf_value").checked && document.form1.alipay_no.value == "" ){
+	dmf_pay.style.display='block';
+	document.getElementById('alipay_no').focus();
+	return false;
+	}
 
-		</script>
-
-<script type="text/javascript">
-			function changeText() {
-				document.getElementById("wz").innerHTML = "***";
-			}
-		</script>
-</head>
-
-<body onLoad="document.form1.ss_title.focus();">
-	<tr>
-		<td class="big">
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td>
-						<div id='dhbt2' class="all" onclick="LzxClick(this)"
-							style='cursor: hand'>
-							<a href='?dqfx=all'>所有房间</a>
-						</div>
-						<div id='dhbt1' class="jjx" onclick="LzxClick(this)"
-							style='cursor: hand'>
-							<a href='?dqfx=jjx'>经济型</a>
-						</div>
-						<div id='dhbt1' class="ssx" onclick="LzxClick(this)"
-							style='cursor: hand'>
-							<a href='?dqfx=ssx'>舒适型</a>
-						</div>
-						<div id='dhbt1' class="gdx" onclick="LzxClick(this)"
-							style='cursor: hand'>
-							<a href='?dqfx=gdx'>高档型</a>
-						</div>
-						<div id='dhbt1' class="hhx" onclick="LzxClick(this)"
-							style='cursor: hand'>
-							<a href='?dqfx=hhx'>豪华型</a>
-						</div>
-
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-
-	<tr>
-		<td>
-
-			<div id="fj_new01"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-			<div id="fj_new02"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-			<div id="fj_new03"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-			<div id="fj_new04"
-				onClick="javascript:window.location.href='fj_kd.html?tid=574' ">
-				<div id="ps">
-					<div class='ps_txt_div'>
-						<a href='fj_kd.html?tid=574' class='ps_txt'>201<br> <span
-							style='font-size: 12px; color: #666666;'>普通标间</span></a>
-					</div>
-				</div>
-				<div id="wz">
-					<a href='fj_kd.html?tid=574' class='wz_txt'>￥128</a>
-				</div>
-			</div>
-
-
-		</td>
-	</tr>
-
-	</table>
-</body>
-<script type="text/javascript">
-
-	//获取url 参数
-	//调用此函数传入一个参数名 获取参数名的value值
-	function getQueryVariable(variable){
-	      var query = window.location.search.substring(1);
-	      var vars = query.split("&");
-	      for (var i=0;i<vars.length;i++) {
-	             var pair = vars[i].split("=");
-	             if(pair[0] == variable){return pair[1];}
-	      }
-	      return(false);
 }
-		 
-		    var zx = getQueryVariable('dqfx');
-		    console.log(zx);
-		    //将所有标题设置绿色
-		    $("div.all").attr('id','dhbt1');
-		    $("div.jjx").attr('id','dhbt1');
-		    $("div.ssx").attr('id','dhbt1');
-		    $("div.gdx").attr('id','dhbt1');
-		    $("div.hhx").attr('id','dhbt1');
+function change()
+{	
+var num_sl = form1.ts.value;
+var num_dj = form1.sjdj.value;
+if (num_sl==0)
+{
+	num_sl=1;
+}
+var hj_num = parseFloat(num_sl)*parseFloat(num_dj);
+document.form1.ysfk.value = hj_num;
+}
+function gel(a){
+	return document.getElementById?document.getElementById(a):null;
+}
+function checkUsername(x){
+var timerand = Math.ceil(Math.random()*100000000);
+var ts = form1.ts.value;
+var fjbh = form1.fjbh.value;
+	if (ts != "")
+	{
+		var url = "RoomStatus/reg_check2.html?fjbh="+fjbh+"&ts="+ts+"&time="+timerand;
+		gel(x).innerHTML = "<font color='#0000ff'>正在检测房间预订系统，请稍候...</font>";
+		var ajax = InitAjax();
+		ajax.open("GET", url, true);
+		ajax.onreadystatechange = function() { 
+	　　	if (ajax.status == 200) {
+				gel(x).innerHTML = ajax.responseText;
+			}
+		}
+	}
+ajax.send(null); 
+return false;
+}
+function check_user(){
+if (document.user.pass.value == "" && document.user.member.value != ""){
+	document.user.pass.focus();
+	return false;
+	}
+}
+function check_mumber(){
+if (document.user.pass.value == "" && document.user.member.value != ""){
+	document.user.pass.focus();
+	return false;
+	}
+}
+function add_rzr_get(){
+var name_rz2 = document.form1.name_rz2.value;
+var sex_rz2 = document.form1.sex_rz2[0].checked;
+if (sex_rz2 == true)
+{
+sex_rz2 = "男";
+}else{
+sex_rz2 = "女";
+}
+var zjmc_rz2 = document.form1.zjmc_rz2.value;
+var zjhm_rz2 = document.form1.zjhm_rz2.value;
+var add_rz2 = document.form1.add_rz2.value;
+var fj_fjbh ="02";
+add_rzr(fj_fjbh,name_rz2,sex_rz2,zjmc_rz2,zjhm_rz2,add_rz2);
+downloadPanel.style.display='none';
+}
 
-		    //获取url参数dqfx的值设置为橙色
-		    $("div."+zx).attr('id','dhbt2');
-		    	
+function add_rzr_get_del(fj_fjbh,m_id){
+var fj_fjbh ="02";
+var m_id = m_id;
+add_rzr_del(fj_fjbh,m_id);
+}
 
+function alipay_sf(){
+	if (document.getElementById("alipay_dmf_value").checked)
+   {
+    document.alipay_img.src = "./images/alipay_dmf.png";
+	ylk_fk_xs.style.display='block';
+   document.getElementById("alipay_dmf_value").checked=false;
+   }else{
+   document.alipay_img.src = "./images/alipay_dmf2.png";
+   ylk_fk_xs.style.display='none';
+   document.getElementById("alipay_dmf_value").checked=true;
+   }
+}
 </script>
 
+</head>
+
+<body onLoad="add_rzr_get_del('02',0);document.user.member.focus();">
+	<div id="a2">
+		<div id="b1">
+			宾客入住办理
+			<div id="previewImage"
+				style="position: absolute; width: 100px; height: 80px; z-index: 1; left: 149px; top: 44px;"
+				align="center"></div>
+		</div>
+		<div id="t1">
+			<form action="fj_kd2.html?roomNumber=${ r.roomNumber }" method="post" name="user"
+				onSubmit="return check_mumber()" autocomplete="off">
+				<table width="90%" border="0" align="center" cellpadding="5"
+					cellspacing="1" bgcolor="#DADADA">
+					<tr>
+						<td height="35" bgcolor="#ffffff"><div align="center">
+								<strong>选择客户类型</strong>
+							</div></td>
+					</tr>
+					<tr bgcolor="#FFFFFF" height="60">
+						<td bgcolor="#EAEAEA"><div align="center">
+								房间号：<span class="bg_bt">${ r.roomNumber }</span><a href="fj_zt.php?kzf=02"><font
+									color="#197d6e"> =>置脏房</font></a> &nbsp;&nbsp; 房间类型：<span
+									class="bg_bt">${ r.roomName }</span> &nbsp;&nbsp;单价：<span class="bg_bt"
+									style="color: #ff0000; font-size: 28px;">￥${ r.roomPrice }</span> 元 <font
+									color="#0000ff"></font>
+							</div></td>
+					</tr>
+					<tr bgcolor="#FFFFFF">
+						<td bgcolor="#EAEAEA"><div align="center">
+								<br />
+								<span style="font-size: 17px; cursor: hand;"><input
+									name='zdw_xz' type='checkbox' id='zdw_xz' value='1'> <label
+									for='zdw_xz'>是否开钟点房？单价：<b>￥ ${ r.roomTimeprice } 元/3 小时</b> (超时:40 元/小时)
+								</label></span><br />
+								<br /> <span class="style1">VIP客户请先刷卡或输入</span><font
+									color="#0000ff">会员卡号或手机号：</font> <input name="member"
+									type="text" class="biaod_txt" id="member" value=""
+									autocomplete="off" style="width: 180px;"> <br> <br>
+								提示: 非会员客户请直接点击下一步办理; <br> <br>
+							</div></td>
+					</tr>
+					<tr bgcolor="#FFFFFF">
+						<td bgcolor="#ffffff" height="70"><div align="center">
+								<input type="submit" name="Submit" value=" 下一步 "
+									onMouseOver="this.className='btn_over'"
+									onMouseOut="this.className='btn_out'" class="btn_out"
+									style="padding-left: 30px; padding-right: 30px; font-size: 17px; height: 40px;">
+								<input name="go1" type="hidden" id="go1" value="2"> <input
+									name="tid" type="hidden" id="tid" value="${ r.roomPrice }"> <input
+									name="fj_fjlx" type="hidden" id="fj_fjlx" value="${ r.roomName }">
+							</div></td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+	</div>
+</body>
 </html>

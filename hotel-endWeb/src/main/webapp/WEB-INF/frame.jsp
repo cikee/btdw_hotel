@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
 <script type="text/javascript" src="../framework/jquery-1.11.3.min.js"></script>
+<!-- layUI的css和js引入 -->
 <link rel="stylesheet" type="text/css" href="../layui/css/layui.css">
 <script type="text/javascript" src="../layui/layui.js"></script>
 <!-- 滚动条插件 -->
@@ -56,7 +57,7 @@
 				<li><a class="menuFA" href="javascript:void(0)"><i
 						class="iconfont icon-biaodanpeizhi left"></i>房间管理<i
 						class="iconfont icon-dajiantouyou right"></i></a>
-						<dl>
+					<dl>
 						<dt>
 							<a href="javascript:void(0)"
 								onclick="menuCAClick('RoomManage/roomType_set',this)">房间类型设置</a>
@@ -65,8 +66,7 @@
 							<a href="javascript:void(0)"
 								onclick="menuCAClick('RoomManage/room_set',this)">客房设置</a>
 						</dt>
-						</dl>
-				</li>
+					</dl></li>
 				<li><a class="menuFA" href="javascript:void(0)"><i
 						class="iconfont icon-shangpin left"></i>商品管理<i
 						class="iconfont icon-dajiantouyou right"></i></a>
@@ -136,7 +136,8 @@
 				<span><i class="iconfont icon-xianshiqi"></i>房态管理</span>
 			</div>
 			<div class="con">
-				<iframe id="mainIframe" src="RoomStatus/Status.html?dqfx=all" scrolling="no"></iframe>
+				<iframe id="mainIframe" src="RoomStatus/Status.html?dqfx=all"
+					scrolling="no"></iframe>
 			</div>
 		</div>
 		<!-- 核心区域 - 结束 -->

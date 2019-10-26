@@ -4,16 +4,12 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 import lombok.experimental.Accessors;
 
 @TableName("hotel_tb_room")
-@Setter
-@Getter
-@ToString
 @Accessors(chain=true)
+@Data
 public class HotelRoomStatus extends BasePojo{
 	private static final long serialVersionUID = 
 			8267367510458781535L;
@@ -27,6 +23,7 @@ public class HotelRoomStatus extends BasePojo{
 	private Long roomDeposit;
 	private String roomImg;
 	private String roomZt;
+	private String roomUrl;
 	private Integer roomStatus;
 	
 	
