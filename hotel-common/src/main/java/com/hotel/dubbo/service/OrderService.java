@@ -2,7 +2,10 @@ package com.hotel.dubbo.service;
 
 
 import java.util.List;
+import java.util.Map;
 
+import com.hotel.pojo.hotelorder;
+import com.hotel.vo.JsonResult;
 import com.hotel.vo.LunchOrderInfo;
 import com.hotel.vo.OrderInfo;
 import com.hotel.vo.PageObject;
@@ -29,6 +32,10 @@ public interface OrderService {
 	PageObject<LunchOrderInfo> findLunchOrders(
 			String username,Integer pageCurrent);
 	/*查询收入数据 $dada*/
-	List<OrderInfo> findMoney(); 
+	//Map<String, Object> findMoney();
+	Map<String, Object> findMoney(String start, String end);
+	/*查询订单明细数据 $dada*/
+	JsonResult findMoneyinfo(String start, String end,Integer pageCurrent,Integer pageSize);
+	 
 	
 }

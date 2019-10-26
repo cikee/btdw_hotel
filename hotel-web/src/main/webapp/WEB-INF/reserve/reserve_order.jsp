@@ -326,8 +326,8 @@
 								<div id="time1"><em>入住时间:</em><input type="text" class="layui-input" id="date1"></div>
 								<div id="time1"><em>离店时间:</em><input type="text" class="layui-input" id="date2"></div>
 									 
-						<!-- 	<div id="time1"><em>入住时间:</em><input type="date" id="date1" value="年月日"></input></div> -->
-						<!-- <div id="time2"><em>离店时间:</em><input type="date" id="date2" value="年月日" /></div> -->
+							<div id="time1"><em>入住时间:</em><input type="date" id="date1" value="年月日"></input></div>
+						 <div id="time2"><em>离店时间:</em><input type="date" id="date2" value="年月日" /></div> 
 									<a href="javascript:;" id="dateBtn">确认修改</a>
 								</div>
 							</div>

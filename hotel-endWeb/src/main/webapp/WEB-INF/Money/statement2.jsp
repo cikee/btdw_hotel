@@ -4,39 +4,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="../../layui/css/layui.css"  media="all">
-  <style>#select1{ position: absolute; left: 410px;top: 20px;}
-  .f111 span{ font-size:17px }
- 
-  </style>
+    <title>Title</title>
+    <style type="text/css">
+      .layui-table-page {
+           position:fixed;
+             }
+</style>
+    
 </head>
 <body>
-  <div class="f111"><span>日期选择</span><input type="text" name="ss" class="layui-input" id="test1" value="" style="width: 400px;height:40px;border:1px solid green">
-
-  <button type="button" class="layui-btn" id="select1">查询</button> </div>  	 
+	
+  <input type="text" name="ss" class="layui-input" id="test1" value="">
+  	
+  <button type="button" class="layui-btn" id="select1">查询</button>    
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
- <div id="main" style="width: 800px;height:400px;border:1px solid green"></div>	
- <table id="demo" lay-filter="test"  ></table> 
-<button class="export">导出报表</button>
+<div id="main" style="width: 800px;height:400px;"></div>	
+<div style="width: 800px;height:300px; border:1px solid green">
+<table id="demo" lay-filter="test"  ></table> </div>	
+
+<div>hahahahahha</div>
 <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
 <script src="../../layui/layui.js"></script>
 <script type="text/javascript" src="../../js/echarts.min.js"></script>
 <script type="text/javascript">
-function showinfo(result1,result2){
 layui.use('table', function(){
-	
 	  var table = layui.table;
 	  //第一个实例
-	  var ins1=table.render({
+	  table.render({
 	    elem: '#demo'
-	    ,defaultToolbar: ['filter', 'print', 'exports'] 
 	    ,height: 312
 	    ,url: '/Money/doFindPages'
          //数据接口
-        ,where:{start:result1,end:result2}
 	    ,page: {//分页
 	    	limit: 5,//默认几条数据一页
 	    	limits: [5, 10, 15, 20, 25, 30]//可选几条一页
@@ -52,20 +50,16 @@ layui.use('table', function(){
 	        ,msgName: 'message'
 		    ,countName: 'rowCount'
 	    }
-	    ,done: function (res, curr, count) {
-            exportData = res.data;
-        }
 	    ,cols: [[ //表头
-	      {type: 'checkbox'}
-	      ,{field: 'id', title: 'ID', width:80}
+	      {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
 	      /* ,{field: 'roomType', title: '房间类型', width:80}
 	      ,{field: 'roomBedtype', title: '床型', width:80, sort: true}
 	      ,{field: 'roomBedsize', title: '床大小', width:80} 
 	      ,{field: 'roomSize', title: '房间尺寸', width: 177} */
 	      /* ,{field: 'roomFloor', title: '楼层', width: 80, sort: true}
 	      ,{field: 'minPrice', title: 'min房价', width: 80, sort: true}
-	      ,{field: 'maxPrice', title: 'max房价', width: 80} 
-	      ,{field: 'storeId', title: '酒店id', width: 135, sort: true}*/
+	      ,{field: 'maxPrice', title: 'max房价', width: 80} */
+	      ,{field: 'storeId', title: '酒店id', width: 135, sort: true}
 	      ,{field: 'hotelAddr', title: '酒店地址', width: 80, sort: true}
 	      ,{field: 'hotelName', title: '酒店名字', width: 80}
 	      ,{field: 'hotelPhone', title: '酒店电话', width: 135, sort: true}
@@ -79,14 +73,12 @@ layui.use('table', function(){
 	      ,{field: 'userPhone', title: '用户电话', width: 135, sort: true}
 	      /* ,{field: 'loginUser', title: '登录名', width: 135, sort: true} */
 	    ]]
-	    
+			  
+
 	  });
-	 
-	//导出按钮
-      $(".export").click(function () {
-          table.exportFile(ins1.config.id, exportData, 'xls');
-      });
-	});}
+	   
+	 //table.on('event(test)', function(obj){$(window).resize(demo);});  
+	});
 layui.use('laydate', function(){
 	  var laydate = layui.laydate;	  
 	//日期范围选择
@@ -154,7 +146,7 @@ return year + "-" + formatTen(month) + "-" + formatTen(day)+" "+hour+":"+minute+
     	    // 指定图表的配置项和数据 
     	    var countTime = [];
     	    var orderPrice = [];
-    	    console.log("111")   
+    	    console.log("111")
         $("#select1").click(function(){
         $.ajax({
 			url:"/echarts/queryBarGraphList",
@@ -169,29 +161,27 @@ return year + "-" + formatTen(month) + "-" + formatTen(day)+" "+hour+":"+minute+
 				          title: {
 				              text: '酒店收入'
 				          },
-				          tooltip: {trigger: 'axis'},
+				          tooltip: {},
 				          legend: {
-				              data:['住房收入']
+				              data:['元']
 				          },
 				          xAxis: {
-				        	 type: 'category',
 				            data: datA.countTime
 				          },
 				          yAxis: {},
 				          series: [{
 				              name: '元',
-				              type: 'line',
-				              data: datA.orderPrice,
-				              itemStyle : { normal: {label : {show: true}}}
+				              type: 'bar',
+				              data: datA.orderPrice
 				          }]
 				      };
 				      myChart.setOption(option);
 				}
             });
 
-	    }                                )
-	    $("#select1").click(showinfo(result1,result2));
+	    })
         
+
 
 
 	    }
