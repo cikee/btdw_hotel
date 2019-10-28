@@ -6,7 +6,7 @@
 	<insert id="insertPayOrder">
 		insert into hotel_order
 		(user_name,user_phone,hotel_name,order_id,room_type,time,
-		hotel_addr,order_price,room_num,createTime,login_user,
+		hotel_addr,order_price,room_num,create_time,login_user,
 		store_id)
 		values
 		(#{userName},#{userPhone},#{hotelName},#{orderId},#{roomType},

@@ -27,11 +27,18 @@ public class JsonResult implements Serializable{
     private String message="ok";
     /**正常数据*/
     private Object data;
+    private int rowCount;
     public JsonResult(String message) {
     	this.message=message;
     }
+    
     public JsonResult(Object data) {
     	this.data=data;
+    }
+    
+    public JsonResult(int rowCount ,Object data) {
+    	this.data=data;
+    	this.rowCount=rowCount;
     }
     /**封装异常数据*/
     public JsonResult(Throwable e) {

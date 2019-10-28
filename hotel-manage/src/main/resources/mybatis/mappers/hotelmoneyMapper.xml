@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hotel.mapper.hotelmoneymapper">
+<select id="findorderprice"  resultType="com.hotel.vo.everydayOrdermoney">
+select  DATE_FORMAT(create_time,'%Y-%m-%d') as day,sum(order_price) as countmoney
+from hotel_order where create_time between #{start} and #{end}
+group by day(create_time)
+</select>
+<select id="findorderinfo"  resultType="com.hotel.vo.OrderInfo">
+select  * from hotel_order where create_time between #{start} and #{end} limit #{startIndex},#{pageSize}
+</select>
+<select id="getRowCount"  resultType="int">
+select  count(*) from hotel_order where create_time between #{start} and #{end}
+</select>
+</mapper>
